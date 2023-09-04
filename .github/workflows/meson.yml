@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: install libraries
         run: sudo apt-get install libjson-c-dev libhugetlbfs-dev
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-python@v3
       # - name: install python dependencies
       #   run: |
@@ -31,7 +31,7 @@ jobs:
     steps:
       - name: install libraries
         run: sudo apt-get install -y libpam-dev libcap-ng-dev
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-python@v3
       - uses: BSFishy/meson-build@v1.0.3
         with:
@@ -45,7 +45,7 @@ jobs:
     steps:
       - name: install libraries
         run: sudo apt-get install -y libpam-dev libcap-ng-dev
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-python@v3
       - uses: BSFishy/meson-build@v1.0.3
         with:
